@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+@layer components {
+  .error {
+    @apply font-sans border-1 mt-1 border-red-500 pl-2 bg-red-300 rounded-2xl text-red-500 w-full max-w-115;
+  }
+  .input-line {
+    @apply font-sans pl-2 rounded-full justify-center h-10 w-full;
+  }
+  .submit-available {
+    @apply h-15 w-8/10 rounded-full border-1 font-[poppins] border-zinc-400 transition duration-150 hover:scale-102 hover:bg-green-500 disabled:cursor-not-allowed flex items-center justify-center gap-2;
+  }
+  .submit-disabled {
+    @apply border-1 border-zinc-400 h-10 w-8/10 rounded-full bg-[#618d6c];
+  }
+  .bg-temp {
+    @apply bg-gradient-to-r from-[#e2632c] via-[#fb4955] via-[#ff3286] via-[#fc39be] to-[#d35bf8];
+  }
+  .form {
+    @apply p-2 bg-[#ffffff] flex flex-col items-center gap-1 w-150 h-auto;
+  }
+}
